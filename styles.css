@@ -29,9 +29,15 @@ button:hover {
   border-right: 5px solid #E5B6D5;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
+  body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  }
+
+  .reset-color-button {
+    height: 50%;
+  }
 }
