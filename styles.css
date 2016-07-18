@@ -1,14 +1,37 @@
-/* Initial */
-
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px dotted black;
+  height: 800px;
 }
 
+
 button {
+  font-family: 'Open Sans', sans-serif;
   padding: 5px;
   font-size: 1em;
-  margin: 3px;
-  display: inline-block;
-  color: #FFFF9D;
-  background-color: transparent;
-  border: 3px solid #FFFF9D;
+  margin: 5px;
+  color: #FFFFFF;
+  background-color: #E5B6D5;
+  border-top: 5px solid #B2479A;
+  border-bottom: 5px solid #B2479A;
+  border-left: 5px solid #CC7FB5;
+  border-right: 5px solid #CC7FB5;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background-color: #B2479A;;
+  border-top: 5px solid #CC7FB5;
+  border-bottom: 5px solid #CC7FB5;
+  border-left: 5px solid #E5B6D5;
+  border-right: 5px solid #E5B6D5;
+}
+
+@media screen and (min-width: 700px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
